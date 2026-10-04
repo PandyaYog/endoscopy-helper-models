@@ -1,0 +1,16 @@
+file,subset,source_uid,expected_landmarks,min_confidence,mean_iou
+01_channel_phantom_try5_0025.png,phantom,phantom_try5_0025,channel,0.789,0.632
+02_epiglottis_clinical_b_AI042_0064.png,clinical,clinical_b_AI042_0064,epiglottis,0.914,0.928
+03_glottic_aperture_phantom_try8_0121.png,phantom,phantom_try8_0121,glottic_aperture,0.84,0.872
+04_glottic_aperture_clinical_b_AI042_0158.png,clinical,clinical_b_AI042_0158,glottic_aperture;glottis,0.816,0.923
+05_epiglottis_clinical_b_AI042_0090.png,clinical,clinical_b_AI042_0090,epiglottis;glottic_aperture;glottis;left_vocal_fold;right_vocal_fold,0.785,0.917
+06_nose_phantom_try8_0002.png,phantom,phantom_try8_0002,nose,0.779,0.903
+07_nostril_phantom_try5_0012.png,phantom,phantom_try5_0012,nostril,0.859,0.907
+08_trachea_phantom_try13_0165.png,phantom,phantom_try13_0165,trachea,0.737,0.879
+09_channel_phantom_try5_0024.png,phantom,phantom_try5_0024,channel,0.801,0.562
+10_glottic_aperture_phantom_try13_0080.png,phantom,phantom_try13_0080,glottic_aperture;left_vocal_fold,0.81,0.778
+11_nose_clinical_b_AI042_0077.png,clinical,clinical_b_AI042_0077,nose;nostril,0.621,0.654
+12_glottic_aperture_phantom_try8_0116.png,phantom,phantom_try8_0116,glottic_aperture;right_vocal_fold,0.676,0.841
+13_trachea_phantom_try13_0169.png,phantom,phantom_try13_0169,trachea,0.726,0.84
+14_epiglottis_clinical_c_AI003_0061.png,clinical,clinical_c_AI003_0061,epiglottis,0.881,0.939
+15_epiglottis_clinical_pt_AI019_0001.png,clinical,clinical_pt_AI019_0001,epiglottis,0.83,0.838

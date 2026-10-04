@@ -1,0 +1,66 @@
+{
+  "cpu": "AMD Ryzen 7 7445HS w/ Radeon 740M Graphics",
+  "imgsz": 640,
+  "exports": {
+    "pytorch": "/home/itachi/Code/medical-project/uaal_upper_airway_model/uaal_runs/yolo26s/export_dynamic/best.pt",
+    "onnx": "/home/itachi/Code/medical-project/uaal_upper_airway_model/uaal_runs/yolo26s/export_dynamic/best.onnx",
+    "openvino_fp32": "/home/itachi/Code/medical-project/uaal_upper_airway_model/uaal_runs/yolo26s/export_dynamic/best_openvino_model/",
+    "openvino_int8": "/home/itachi/Code/medical-project/uaal_upper_airway_model/uaal_runs/yolo26s/export_dynamic/best_int8_openvino_model/"
+  },
+  "accuracy": {
+    "pytorch": {
+      "split": "test",
+      "mAP50": 0.7233,
+      "mAP50-95": 0.4402
+    },
+    "onnx": {
+      "split": "test",
+      "mAP50": 0.7233,
+      "mAP50-95": 0.4402
+    },
+    "openvino_fp32": {
+      "split": "test",
+      "mAP50": 0.723,
+      "mAP50-95": 0.44
+    },
+    "openvino_int8": {
+      "split": "test",
+      "mAP50": 0.7106,
+      "mAP50-95": 0.4059
+    }
+  },
+  "speed": {
+    "pytorch": {
+      "images": 100,
+      "preprocess_ms": 1.4,
+      "inference_ms": 63.2,
+      "postprocess_ms": 0.5,
+      "total_ms": 65.1,
+      "fps": 15.3
+    },
+    "onnx": {
+      "images": 100,
+      "preprocess_ms": 15.6,
+      "inference_ms": 46.8,
+      "postprocess_ms": 10.2,
+      "total_ms": 72.6,
+      "fps": 13.8
+    },
+    "openvino_fp32": {
+      "images": 100,
+      "preprocess_ms": 1.5,
+      "inference_ms": 24.4,
+      "postprocess_ms": 2.5,
+      "total_ms": 28.4,
+      "fps": 35.3
+    },
+    "openvino_int8": {
+      "images": 100,
+      "preprocess_ms": 1.4,
+      "inference_ms": 18.6,
+      "postprocess_ms": 2.0,
+      "total_ms": 22.0,
+      "fps": 45.4
+    }
+  }
+}

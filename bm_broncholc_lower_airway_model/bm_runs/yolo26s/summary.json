@@ -1,0 +1,220 @@
+{
+  "model": "yolo26s",
+  "task": "detect",
+  "imgsz": 512,
+  "epochs": 200,
+  "epochs_run": 74,
+  "train_minutes": 20.2,
+  "best_weights": "/kaggle/working/bm_runs/yolo26s/weights/best.pt",
+  "metrics": {
+    "val/all": {
+      "precision": 0.6498,
+      "recall": 0.5697,
+      "mAP50": 0.6318,
+      "mAP50-95": 0.306,
+      "per_class_mAP50-95": {
+        "vocal_cords": 0.3972,
+        "trachea": 0.2893,
+        "main_carina": 0.1343,
+        "right_main_bronchus": 0.3351,
+        "left_main_bronchus": 0.3169,
+        "intermediate_bronchus": 0.3389,
+        "right_superior_lobar_bronchus": 0.361,
+        "right_middle_lobar_bronchus": 0.2119,
+        "right_inferior_lobar_bronchus": 0.357,
+        "left_superior_lobar_bronchus": 0.2882,
+        "left_inferior_lobar_bronchus": 0.3357
+      }
+    },
+    "val/lc": {
+      "precision": 0.7209,
+      "recall": 0.5347,
+      "mAP50": 0.6323,
+      "mAP50-95": 0.3105,
+      "per_class_mAP50-95": {
+        "vocal_cords": 0.3622,
+        "trachea": 0.2762,
+        "main_carina": 0.0864,
+        "right_main_bronchus": 0.3515,
+        "left_main_bronchus": 0.3176,
+        "intermediate_bronchus": 0.3797,
+        "right_superior_lobar_bronchus": 0.3438,
+        "right_middle_lobar_bronchus": 0.1791,
+        "right_inferior_lobar_bronchus": 0.3738,
+        "left_superior_lobar_bronchus": 0.4005,
+        "left_inferior_lobar_bronchus": 0.3449
+      }
+    },
+    "val/nlc": {
+      "precision": 0.6554,
+      "recall": 0.5747,
+      "mAP50": 0.6447,
+      "mAP50-95": 0.3173,
+      "per_class_mAP50-95": {
+        "vocal_cords": 0.4709,
+        "trachea": 0.3118,
+        "main_carina": 0.1824,
+        "right_main_bronchus": 0.3336,
+        "left_main_bronchus": 0.3227,
+        "intermediate_bronchus": 0.334,
+        "right_superior_lobar_bronchus": 0.3728,
+        "right_middle_lobar_bronchus": 0.2417,
+        "right_inferior_lobar_bronchus": 0.3713,
+        "left_superior_lobar_bronchus": 0.2199,
+        "left_inferior_lobar_bronchus": 0.3289
+      }
+    },
+    "test/all": {
+      "precision": 0.6354,
+      "recall": 0.5163,
+      "mAP50": 0.561,
+      "mAP50-95": 0.2782,
+      "per_class_mAP50-95": {
+        "vocal_cords": 0.3779,
+        "trachea": 0.2656,
+        "main_carina": 0.1565,
+        "right_main_bronchus": 0.31,
+        "left_main_bronchus": 0.3061,
+        "intermediate_bronchus": 0.2878,
+        "right_superior_lobar_bronchus": 0.3582,
+        "right_middle_lobar_bronchus": 0.1663,
+        "right_inferior_lobar_bronchus": 0.2953,
+        "left_superior_lobar_bronchus": 0.3039,
+        "left_inferior_lobar_bronchus": 0.2321
+      }
+    },
+    "test/lc": {
+      "precision": 0.6084,
+      "recall": 0.6073,
+      "mAP50": 0.615,
+      "mAP50-95": 0.2984,
+      "per_class_mAP50-95": {
+        "vocal_cords": 0.4463,
+        "trachea": 0.2725,
+        "main_carina": 0.1498,
+        "right_main_bronchus": 0.3936,
+        "left_main_bronchus": 0.3459,
+        "intermediate_bronchus": 0.2475,
+        "right_superior_lobar_bronchus": 0.4472,
+        "right_middle_lobar_bronchus": 0.1622,
+        "right_inferior_lobar_bronchus": 0.3103,
+        "left_superior_lobar_bronchus": 0.3038,
+        "left_inferior_lobar_bronchus": 0.2028
+      }
+    },
+    "test/nlc": {
+      "precision": 0.6919,
+      "recall": 0.4628,
+      "mAP50": 0.543,
+      "mAP50-95": 0.2812,
+      "per_class_mAP50-95": {
+        "vocal_cords": 0.3567,
+        "trachea": 0.2838,
+        "main_carina": 0.1793,
+        "right_main_bronchus": 0.2664,
+        "left_main_bronchus": 0.292,
+        "intermediate_bronchus": 0.3241,
+        "right_superior_lobar_bronchus": 0.3276,
+        "right_middle_lobar_bronchus": 0.183,
+        "right_inferior_lobar_bronchus": 0.2933,
+        "left_superior_lobar_bronchus": 0.3206,
+        "left_inferior_lobar_bronchus": 0.267
+      }
+    }
+  },
+  "exports": {
+    "pytorch": "/kaggle/working/bm_runs/yolo26s/weights/best.pt",
+    "onnx": "/kaggle/working/bm_runs/yolo26s/weights/best.onnx",
+    "openvino_fp32": "/kaggle/working/bm_runs/yolo26s/weights/best_openvino_model/",
+    "openvino_int8": "/kaggle/working/bm_runs/yolo26s/weights/best_int8_openvino_model/"
+  },
+  "cpu_benchmark": {
+    "pytorch": {
+      "images": 100,
+      "preprocess_ms": 1.9,
+      "inference_ms": 102.9,
+      "postprocess_ms": 0.9,
+      "total_ms": 105.7,
+      "fps": 9.5
+    },
+    "onnx": {
+      "images": 100,
+      "preprocess_ms": 2.2,
+      "inference_ms": 82.0,
+      "postprocess_ms": 1.2,
+      "total_ms": 85.4,
+      "fps": 11.7
+    },
+    "openvino_fp32": {
+      "images": 100,
+      "preprocess_ms": 2.2,
+      "inference_ms": 78.8,
+      "postprocess_ms": 1.2,
+      "total_ms": 82.2,
+      "fps": 12.2
+    },
+    "openvino_int8": {
+      "images": 100,
+      "preprocess_ms": 2.1,
+      "inference_ms": 64.1,
+      "postprocess_ms": 1.2,
+      "total_ms": 67.4,
+      "fps": 14.8
+    }
+  },
+  "hyperparameters": {
+    "epochs": 200,
+    "imgsz": 512,
+    "batch": 32,
+    "patience": 50,
+    "optimizer": "auto",
+    "cos_lr": true,
+    "seed": 42,
+    "deterministic": false,
+    "fraction": 1.0,
+    "degrees": 15.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "fliplr": 0.0,
+    "flipud": 0.0,
+    "mosaic": 1.0,
+    "close_mosaic": 20,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "copy_paste": 0.0,
+    "hsv_h": 0.0,
+    "hsv_s": 0.0,
+    "hsv_v": 0.4,
+    "cls_pw": 0.5
+  },
+  "environment": {
+    "python": "3.13.15",
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "ultralytics": "8.4.173",
+    "torch": "2.11.0+cu128",
+    "albumentations": "2.0.8",
+    "openvino": "2026.4.1-22982-e213a147257-releases/2026/4",
+    "onnxruntime": "1.30.0",
+    "gpus": [
+      "Tesla T4",
+      "Tesla T4"
+    ]
+  },
+  "dataset": {
+    "data_yaml": "/kaggle/input/datasets/yogpandya22/bm-dataset/bm_anatomy/data.yaml",
+    "manifest_sha256": "6d3d82a01d8d5a4e",
+    "created": "2026-10-05 02:27:22",
+    "task": "anatomy",
+    "seed": 42,
+    "ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "max_side": 640,
+    "remove_text": true
+  }
+}

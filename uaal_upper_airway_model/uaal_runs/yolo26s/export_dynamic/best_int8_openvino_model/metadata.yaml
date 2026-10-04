@@ -1,0 +1,32 @@
+description: Ultralytics YOLO26s model trained on /kaggle/working/uaal_runs/data_abs.yaml
+author: Ultralytics
+date: '2026-10-05T03:12:11.881539+05:30'
+version: 8.4.173
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+head: Detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: epiglottis
+  1: glottis
+  2: glottic_aperture
+  3: left_vocal_fold
+  4: right_vocal_fold
+  5: trachea
+  6: channel
+  7: nose
+  8: nostril
+args:
+  data: /home/itachi/Code/medical-project/uaal_upper_airway_model/uaal_runs/yolo26s/export_dynamic/data_abs.yaml
+  batch: 1
+  fraction: 1.0
+  quantize: 8
+  nms: null
+  dynamic: true
+channels: 3
+end2end: false

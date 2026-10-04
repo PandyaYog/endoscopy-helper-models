@@ -1,0 +1,128 @@
+{
+  "all/train": {
+    "mAP50": 0.9476,
+    "mAP50-95": 0.694,
+    "per_class_mAP50": {
+      "epiglottis": 0.9948,
+      "glottis": 0.9773,
+      "glottic_aperture": 0.9683,
+      "left_vocal_fold": 0.9768,
+      "right_vocal_fold": 0.9678,
+      "trachea": 0.7917,
+      "channel": 0.876,
+      "nose": 0.9849,
+      "nostril": 0.9907
+    }
+  },
+  "all/val": {
+    "mAP50": 0.8046,
+    "mAP50-95": 0.4711,
+    "per_class_mAP50": {
+      "epiglottis": 0.9907,
+      "glottis": 0.7922,
+      "glottic_aperture": 0.9317,
+      "left_vocal_fold": 0.8016,
+      "right_vocal_fold": 0.8562,
+      "trachea": 0.7009,
+      "channel": 0.5849,
+      "nose": 0.8879,
+      "nostril": 0.695
+    }
+  },
+  "all/test": {
+    "mAP50": 0.723,
+    "mAP50-95": 0.44,
+    "per_class_mAP50": {
+      "epiglottis": 0.9594,
+      "glottis": 0.9054,
+      "glottic_aperture": 0.8517,
+      "left_vocal_fold": 0.844,
+      "right_vocal_fold": 0.8586,
+      "trachea": 0.6318,
+      "channel": 0.2925,
+      "nose": 0.704,
+      "nostril": 0.4599
+    }
+  },
+  "clinical/train": {
+    "mAP50": 0.9876,
+    "mAP50-95": 0.7594,
+    "per_class_mAP50": {
+      "epiglottis": 0.9948,
+      "glottis": 0.9904,
+      "glottic_aperture": 0.9743,
+      "left_vocal_fold": 0.9843,
+      "right_vocal_fold": 0.9815,
+      "nose": 0.993,
+      "nostril": 0.9947
+    }
+  },
+  "clinical/val": {
+    "mAP50": 0.8658,
+    "mAP50-95": 0.5252,
+    "per_class_mAP50": {
+      "epiglottis": 0.9906,
+      "glottis": 0.848,
+      "glottic_aperture": 0.8944,
+      "left_vocal_fold": 0.9018,
+      "right_vocal_fold": 0.9416,
+      "nose": 0.9092,
+      "nostril": 0.5751
+    }
+  },
+  "clinical/test": {
+    "mAP50": 0.7875,
+    "mAP50-95": 0.4942,
+    "per_class_mAP50": {
+      "epiglottis": 0.9596,
+      "glottis": 0.9196,
+      "glottic_aperture": 0.7751,
+      "left_vocal_fold": 0.8264,
+      "right_vocal_fold": 0.8807,
+      "nose": 0.875,
+      "nostril": 0.2759
+    }
+  },
+  "phantom/train": {
+    "mAP50": 0.9037,
+    "mAP50-95": 0.6374,
+    "per_class_mAP50": {
+      "glottis": 0.8334,
+      "glottic_aperture": 0.9677,
+      "left_vocal_fold": 0.9523,
+      "right_vocal_fold": 0.9112,
+      "trachea": 0.7916,
+      "channel": 0.876,
+      "nose": 0.9463,
+      "nostril": 0.9515
+    }
+  },
+  "phantom/val": {
+    "mAP50": 0.707,
+    "mAP50-95": 0.4169,
+    "per_class_mAP50": {
+      "glottis": 0.4006,
+      "glottic_aperture": 0.9697,
+      "left_vocal_fold": 0.5766,
+      "right_vocal_fold": 0.6158,
+      "trachea": 0.7011,
+      "channel": 0.5853,
+      "nose": 0.8511,
+      "nostril": 0.9559
+    }
+  },
+  "phantom/test": {
+    "mAP50": 0.7114,
+    "mAP50-95": 0.4277,
+    "per_class_mAP50": {
+      "glottis": 0.6748,
+      "glottic_aperture": 0.9873,
+      "left_vocal_fold": 0.9177,
+      "right_vocal_fold": 0.7875,
+      "trachea": 0.6324,
+      "channel": 0.2919,
+      "nose": 0.5914,
+      "nostril": 0.8079
+    }
+  }
+}

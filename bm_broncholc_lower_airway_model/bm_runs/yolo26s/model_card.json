@@ -1,0 +1,48 @@
+{
+  "model": "yolo26s",
+  "task": "detect",
+  "imgsz": 512,
+  "classes": {
+    "0": "vocal_cords",
+    "1": "trachea",
+    "2": "main_carina",
+    "3": "right_main_bronchus",
+    "4": "left_main_bronchus",
+    "5": "intermediate_bronchus",
+    "6": "right_superior_lobar_bronchus",
+    "7": "right_middle_lobar_bronchus",
+    "8": "right_inferior_lobar_bronchus",
+    "9": "left_superior_lobar_bronchus",
+    "10": "left_inferior_lobar_bronchus"
+  },
+  "input": "single-channel grayscale replicated to 3 channels; frames must go through preprocessing.preprocess_frame() (scope-view crop + text removal) first",
+  "training_data": "BM-BronchoLC (Scientific Data 2024), patient-level split",
+  "dataset": {
+    "data_yaml": "/kaggle/input/datasets/yogpandya22/bm-dataset/bm_anatomy/data.yaml",
+    "manifest_sha256": "6d3d82a01d8d5a4e",
+    "created": "2026-10-05 02:27:22",
+    "task": "anatomy",
+    "seed": 42,
+    "ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "max_side": 640,
+    "remove_text": true
+  },
+  "test_metrics": {
+    "precision": 0.6354,
+    "recall": 0.5163,
+    "mAP50": 0.561,
+    "mAP50-95": 0.2782
+  },
+  "exports": {
+    "pytorch": "/kaggle/working/bm_runs/yolo26s/weights/best.pt",
+    "onnx": "/kaggle/working/bm_runs/yolo26s/weights/best.onnx",
+    "openvino_fp32": "/kaggle/working/bm_runs/yolo26s/weights/best_openvino_model/",
+    "openvino_int8": "/kaggle/working/bm_runs/yolo26s/weights/best_int8_openvino_model/"
+  },
+  "intended_use": "research / education (bronchoscopy training), not clinical diagnosis",
+  "created": "2026-10-04 21:51:06"
+}

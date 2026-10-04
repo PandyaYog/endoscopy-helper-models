@@ -1,0 +1,174 @@
+{
+  "model": "yolo26s",
+  "imgsz": 640,
+  "epochs": 150,
+  "epochs_run": 165,
+  "train_minutes": 63.8,
+  "best_weights": "/kaggle/working/uaal_runs/yolo26s/weights/best.pt",
+  "metrics": {
+    "val/all": {
+      "precision": 0.7955,
+      "recall": 0.771,
+      "mAP50": 0.8056,
+      "mAP50-95": 0.4723,
+      "per_class_mAP50-95": {
+        "epiglottis": 0.6607,
+        "glottis": 0.4914,
+        "glottic_aperture": 0.6485,
+        "left_vocal_fold": 0.4355,
+        "right_vocal_fold": 0.4889,
+        "trachea": 0.3486,
+        "channel": 0.2065,
+        "nose": 0.5451,
+        "nostril": 0.4251
+      }
+    },
+    "val/clinical": {
+      "precision": 0.8826,
+      "recall": 0.8117,
+      "mAP50": 0.8667,
+      "mAP50-95": 0.5267,
+      "per_class_mAP50-95": {
+        "epiglottis": 0.6605,
+        "glottis": 0.5464,
+        "glottic_aperture": 0.6074,
+        "left_vocal_fold": 0.5052,
+        "right_vocal_fold": 0.5272,
+        "nose": 0.5911,
+        "nostril": 0.2492
+      }
+    },
+    "val/phantom": {
+      "precision": 0.6751,
+      "recall": 0.7295,
+      "mAP50": 0.7062,
+      "mAP50-95": 0.4165,
+      "per_class_mAP50-95": {
+        "glottis": 0.1684,
+        "glottic_aperture": 0.6933,
+        "left_vocal_fold": 0.2825,
+        "right_vocal_fold": 0.385,
+        "trachea": 0.3486,
+        "channel": 0.2065,
+        "nose": 0.4556,
+        "nostril": 0.7924
+      }
+    },
+    "test/all": {
+      "precision": 0.6835,
+      "recall": 0.7312,
+      "mAP50": 0.7226,
+      "mAP50-95": 0.4386,
+      "per_class_mAP50-95": {
+        "epiglottis": 0.6566,
+        "glottis": 0.5979,
+        "glottic_aperture": 0.6138,
+        "left_vocal_fold": 0.52,
+        "right_vocal_fold": 0.4835,
+        "trachea": 0.3644,
+        "channel": 0.0902,
+        "nose": 0.3649,
+        "nostril": 0.2564
+      }
+    },
+    "test/clinical": {
+      "precision": 0.7504,
+      "recall": 0.779,
+      "mAP50": 0.7838,
+      "mAP50-95": 0.491,
+      "per_class_mAP50-95": {
+        "epiglottis": 0.6568,
+        "glottis": 0.6234,
+        "glottic_aperture": 0.5491,
+        "left_vocal_fold": 0.5236,
+        "right_vocal_fold": 0.476,
+        "nose": 0.5145,
+        "nostril": 0.0938
+      }
+    },
+    "test/phantom": {
+      "precision": 0.6396,
+      "recall": 0.7461,
+      "mAP50": 0.7162,
+      "mAP50-95": 0.4277,
+      "per_class_mAP50-95": {
+        "glottis": 0.3012,
+        "glottic_aperture": 0.7382,
+        "left_vocal_fold": 0.5466,
+        "right_vocal_fold": 0.5696,
+        "trachea": 0.3653,
+        "channel": 0.0903,
+        "nose": 0.2776,
+        "nostril": 0.5326
+      }
+    }
+  },
+  "exports": {
+    "pytorch": "/kaggle/working/uaal_runs/yolo26s/weights/best.pt",
+    "onnx": "/kaggle/working/uaal_runs/yolo26s/weights/best.onnx",
+    "openvino_fp32": "/kaggle/working/uaal_runs/yolo26s/weights/best_openvino_model/",
+    "openvino_int8": "/kaggle/working/uaal_runs/yolo26s/weights/best_int8_openvino_model/"
+  },
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+  "cpu_benchmark": {
+    "pytorch": {
+      "images": 100,
+      "preprocess_ms": 2.6,
+      "inference_ms": 120.8,
+      "postprocess_ms": 1.0,
+      "total_ms": 124.4,
+      "fps": 8.0
+    },
+    "onnx": {
+      "images": 100,
+      "preprocess_ms": 3.5,
+      "inference_ms": 117.4,
+      "postprocess_ms": 1.3,
+      "total_ms": 122.1,
+      "fps": 8.2
+    },
+    "openvino_fp32": {
+      "images": 100,
+      "preprocess_ms": 3.3,
+      "inference_ms": 116.1,
+      "postprocess_ms": 1.4,
+      "total_ms": 120.8,
+      "fps": 8.3
+    },
+    "openvino_int8": {
+      "images": 100,
+      "preprocess_ms": 3.3,
+      "inference_ms": 87.6,
+      "postprocess_ms": 1.2,
+      "total_ms": 92.1,
+      "fps": 10.9
+    }
+  },
+  "hyperparameters": {
+    "epochs": 150,
+    "imgsz": 640,
+    "batch": 32,
+    "patience": 30,
+    "optimizer": "auto",
+    "cos_lr": true,
+    "seed": 42,
+    "deterministic": false,
+    "fraction": 1.0,
+    "degrees": 15.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "fliplr": 0.0,
+    "flipud": 0.0,
+    "mosaic": 1.0,
+    "close_mosaic": 15,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "hsv_h": 0.0,
+    "hsv_s": 0.0,
+    "hsv_v": 0.4,
+    "cls_pw": 0.5
+  },
+  "ultralytics": "8.4.173"
+}

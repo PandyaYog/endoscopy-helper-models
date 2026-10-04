@@ -1,0 +1,29 @@
+# Python and virtual environments
+__pycache__/
+*.pyc
+env/
+.venv/
+venv/
+
+# Raw datasets are not redistributed - see dataset/README.md for download instructions
+dataset/*
+!dataset/README.md
+
+# Generated data, Kaggle packages, archives and inference outputs
+**/data/
+**/dist/
+*.zip
+**/predictions/
+
+# Training runs: keep reports, plots, logs, best.pt and the dynamic OpenVINO exports used by infer.py
+**/*_runs/data_abs.yaml
+**/*_runs/*/weights/last.pt
+**/*_runs/*/weights/best.onnx
+**/*_runs/*/weights/best_openvino_model/
+**/*_runs/*/weights/best_int8_openvino_model/
+**/*_runs/*/export_dynamic/best.pt
+**/*_runs/*/export_dynamic/best.onnx
+**/*_runs/*/export_dynamic/export_eval/
+**/*_runs/*/export_dynamic/data_abs.yaml
+**/*_runs/*/plots/val_runs/
+**/*_runs/*/plots/data_abs.yaml

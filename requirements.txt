@@ -1,0 +1,9 @@
+# Inference + plots (both models)
+ultralytics>=8.4
+openvino>=2024.0
+numpy>=1.24
+pillow>=10.0
+scipy>=1.10
+pyyaml>=6.0
+matplotlib>=3.6
+# Training additionally uses (installed on Kaggle): albumentations>=2.0 nncf onnx onnxruntime onnxslim
